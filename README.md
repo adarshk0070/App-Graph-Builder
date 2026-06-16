@@ -47,8 +47,9 @@ npm run typecheck
 - Mobile drawer basic implementation
 
 ## Canvas View
-<img width="960" height="542" alt="image" src="https://github.com/user-attachments/assets/2ddf06ac-58d4-4b71-96a3-16dc16a16d80" />
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b63208f8-300a-4258-b149-69ac3f10507a" />
 
 ## Node Inspector
-<img width="960" height="543" alt="image" src="https://github.com/user-attachments/assets/a642a8a8-83f6-46a7-9798-58e8ded95237" />
+<img width="960" height="544" alt="image" src="https://github.com/user-attachments/assets/f7c48b2c-9a60-427f-80a3-ad280b564f46" />
+
 
