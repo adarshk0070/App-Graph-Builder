@@ -13,6 +13,7 @@ interface AppStore {
   toggleMobilePanel: () => void;
   setMobilePanelOpen: (open: boolean) => void;
   toggleTheme: () => void;
+  setTheme: (theme: 'dark' | 'light') => void;
 }
 
 export const useAppStore = create<AppStore>((set) => ({
@@ -39,4 +40,6 @@ export const useAppStore = create<AppStore>((set) => ({
 
   toggleTheme: () =>
     set((state) => ({ theme: state.theme === 'dark' ? 'light' : 'dark' })),
+
+  setTheme: (theme) => set({ theme }),
 }));

@@ -162,8 +162,29 @@ function ConfigTab({
           value={nodeData.memory}
           onChange={(e) => {
             const val = parseFloat(e.target.value) || 0
-            const clamped = Math.min(val, 10)
+            const clamped = Math.min(Math.max(val, 0), 10)
             updateNodeData({ memory: clamped })
+          }}
+        />
+      </div>
+
+      {/* Cost */}
+      <div className="inspector-field">
+        <label className="inspector-field-label" htmlFor="inspector-cost">
+          Cost ($/hr)
+        </label>
+        <input
+          id="inspector-cost"
+          className="inspector-field-input"
+          type="number"
+          step="0.01"
+          min="0"
+          value={nodeData.cost}
+          onChange={(e) => {
+            const val = parseFloat(e.target.value);
+            if (!isNaN(val) && val >= 0) {
+              updateNodeData({ cost: Math.round(val * 100) / 100 });
+            }
           }}
         />
       </div>

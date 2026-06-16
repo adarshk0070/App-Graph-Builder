@@ -1,12 +1,9 @@
 import {
-  GitBranch,
-  Database,
-  HardDrive,
-  Box,
-  LayoutGrid,
+  LayoutDashboard,
   Network,
-  Container,
 } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
+import { SiPostgresql, SiRedis, SiMongodb, SiDocker } from 'react-icons/si';
 import type { ReactNode } from 'react';
 
 interface SidebarItem {
@@ -16,13 +13,13 @@ interface SidebarItem {
 }
 
 const sidebarItems: SidebarItem[] = [
-  { icon: <GitBranch size={18} />, label: 'GitHub', id: 'github' },
-  { icon: <Database size={18} />, label: 'PostgreSQL', id: 'postgresql' },
-  { icon: <HardDrive size={18} />, label: 'Redis', id: 'redis' },
-  { icon: <Container size={18} />, label: 'MongoDB', id: 'mongodb' },
-  { icon: <Box size={18} />, label: 'Services', id: 'cube' },
-  { icon: <LayoutGrid size={18} />, label: 'Grid', id: 'grid' },
-  { icon: <Network size={18} />, label: 'Network', id: 'network' },
+  { icon: <FaGithub size={18} />, label: 'GitHub', id: 'github' },
+  { icon: <SiPostgresql size={18} color="#336791" />, label: 'PostgreSQL', id: 'postgresql' },
+  { icon: <SiRedis size={18} color="#FF4438" />, label: 'Redis', id: 'redis' },
+  { icon: <SiMongodb size={18} color="#47A248" />, label: 'MongoDB', id: 'mongodb' },
+  { icon: <SiDocker size={18} color="#2496ED" />, label: 'Services', id: 'cube' },
+  { icon: <LayoutDashboard size={18} color="#EAB308" />, label: 'Grid', id: 'grid' },
+  { icon: <Network size={18} color="#22C55E" />, label: 'Network', id: 'network' },
 ];
 
 export function Sidebar() {

@@ -12,7 +12,7 @@ import {
 import { useMobile } from '@/hooks/useMobile';
 
 export function TopBar() {
-  const { theme, toggleTheme, toggleMobilePanel, selectedAppId } = useAppStore();
+  const { theme, setTheme, toggleMobilePanel, selectedAppId } = useAppStore();
   const { data: apps } = useApps();
   const isMobile = useMobile();
 
@@ -65,11 +65,18 @@ export function TopBar() {
           <span>Share</span>
         </button>
         <button
-          className="top-bar-icon-btn theme-toggle-btn"
-          onClick={toggleTheme}
-          aria-label="Toggle theme"
+          className={`top-bar-icon-btn theme-toggle-btn ${theme === 'light' ? 'active' : ''}`}
+          onClick={() => setTheme('light')}
+          aria-label="Light mode"
         >
-          {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+          <Sun size={16} />
+        </button>
+        <button
+          className={`top-bar-icon-btn theme-toggle-btn ${theme === 'dark' ? 'active' : ''}`}
+          onClick={() => setTheme('dark')}
+          aria-label="Dark mode"
+        >
+          <Moon size={16} />
         </button>
         <div className="avatar">
           <span>A</span>
