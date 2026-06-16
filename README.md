@@ -45,8 +45,10 @@ npm run typecheck
 - Mock data resets on page refresh
 - No persistent storage
 - Mobile drawer basic implementation
+
 ## Canvas View
 <img width="960" height="542" alt="image" src="https://github.com/user-attachments/assets/2ddf06ac-58d4-4b71-96a3-16dc16a16d80" />
-### Node Inspector
+
+## Node Inspector
 <img width="960" height="543" alt="image" src="https://github.com/user-attachments/assets/a642a8a8-83f6-46a7-9798-58e8ded95237" />
 
