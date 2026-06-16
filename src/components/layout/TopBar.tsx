@@ -48,11 +48,11 @@ export function TopBar() {
           </button>
         </div>
         <div className="top-bar-divider" />
-        <button className="app-selector-btn">
+        <button className="app-selector-btn" aria-label="Select application">
           <span className="app-selector-name">
             {selectedApp?.name ?? 'Select app'}
           </span>
-          <ChevronDown size={14} className="app-selector-chevron" />
+          <ChevronDown size={14} className="app-selector-chevron" aria-hidden="true" />
         </button>
         <button className="top-bar-icon-btn" aria-label="More options">
           <MoreHorizontal size={16} />
