@@ -1,50 +1,69 @@
-# App Graph Builder
+App Graph Builder
 
-A React + TypeScript graph visualization dashboard 
-built as a frontend intern assignment.
+A responsive ReactFlow-based graph visualization dashboard built as a Frontend Intern Assignment.
 
-## Tech Stack
-- React + Vite
-- TypeScript (strict)
-- ReactFlow (xyflow)
-- Zustand
-- TanStack Query
-- shadcn/ui
-- MSW (Mock Service Worker)
+Live Demo
 
-## Setup Instructions
+https://app-graph-builder-flame.vercel.app
 
-```bash
+GitHub Repository
+
+https://github.com/adarshk0070/App-Graph-Builder
+
+Features
+Responsive layout for desktop, tablet, and mobile
+ReactFlow graph visualization
+Custom service nodes
+Node selection and deletion
+Zoom, pan, and fit-view support
+Node Inspector with:
+Status badge
+Config/Runtime tabs
+Editable node name
+Synced slider and numeric input
+Application switching
+Mobile drawer support
+Loading and error states
+Mock API integration using MSW
+Tech Stack
+React + Vite
+TypeScript (Strict Mode)
+ReactFlow (xyflow)
+Zustand
+TanStack Query
+shadcn/ui
+MSW (Mock Service Worker)
+Setup Instructions
 # Install dependencies
 npm install
 
-# Start dev server
+# Start development server
 npm run dev
 
-# Build
+# Build production bundle
 npm run build
 
-# Preview build
+# Preview production build
 npm run preview
 
-# Lint
+# Run ESLint
 npm run lint
 
-# Type check
+# Run TypeScript type checking
 npm run typecheck
-```
+Architecture Decisions
+MSW used to simulate backend APIs with realistic latency
+Zustand used only for UI state management
+TanStack Query used for server state, caching, and data fetching
+ReactFlow custom nodes used to render service cards
+Inspector updates node data through ReactFlow state management
+Responsive layout implemented using CSS breakpoints and mobile drawer
+Known Limitations
+Mock data resets on page refresh
+No backend persistence
+Mobile drawer implementation is intentionally lightweight
 
-## Key Decisions
-- Used MSW for mock API (realistic fetch simulation)
-- Zustand for UI state only (not server data)
-- TanStack Query for all server data + caching
-- CustomNode renders full card inside ReactFlow
-- useNodesData() for reactive node data sync
-
-## Known Limitations
-- Mock data resets on page refresh
-- No persistent storage
-- Mobile drawer basic implementation
+Screenshots
 
 ## Canvas View
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b63208f8-300a-4258-b149-69ac3f10507a" />
