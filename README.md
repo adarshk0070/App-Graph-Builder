@@ -1,0 +1,47 @@
+# App Graph Builder
+
+A React + TypeScript graph visualization dashboard 
+built as a frontend intern assignment.
+
+## Tech Stack
+- React + Vite
+- TypeScript (strict)
+- ReactFlow (xyflow)
+- Zustand
+- TanStack Query
+- shadcn/ui
+- MSW (Mock Service Worker)
+
+## Setup Instructions
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build
+npm run build
+
+# Preview build
+npm run preview
+
+# Lint
+npm run lint
+
+# Type check
+npm run typecheck
+```
+
+## Key Decisions
+- Used MSW for mock API (realistic fetch simulation)
+- Zustand for UI state only (not server data)
+- TanStack Query for all server data + caching
+- CustomNode renders full card inside ReactFlow
+- useNodesData() for reactive node data sync
+
+## Known Limitations
+- Mock data resets on page refresh
+- No persistent storage
+- Mobile drawer basic implementation
