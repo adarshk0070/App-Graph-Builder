@@ -45,3 +45,6 @@ npm run typecheck
 - Mock data resets on page refresh
 - No persistent storage
 - Mobile drawer basic implementation
+
+<img width="960" height="542" alt="image" src="https://github.com/user-attachments/assets/2ddf06ac-58d4-4b71-96a3-16dc16a16d80" />
+
